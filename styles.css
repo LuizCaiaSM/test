@@ -13,28 +13,23 @@ body {
 
 h1 {
     font-size: 3em;
-    margin-top: 0; /* Remova a margem inferior do h1 */
+    margin-top: 0; 
     margin-bottom: 0;
     align-items: left;
 }
 
 h3 {
     color: #3576ee;
-    margin-bottom: 0; /* Remova a margem superior do h2 */
+    margin-bottom: 0; 
     align-items: left;
    
 }   
-
-
-
-
 
 .faq-container {
     display: center;
     justify-content: center;
 }
 
-/* Estilos comuns para todas as perguntas */
 .faq-item h2 {
     color: #007bff;
     cursor: pointer;
@@ -73,25 +68,24 @@ h3 {
     background: #FFFFFF;
     box-shadow: 0px 1em 1.333em -0.667em rgba(105, 105, 114, 0.3);
     border-radius: 7px;
-    padding: 1em 1em; /* Reduzindo o preenchimento vertical e horizontal */
-    margin-bottom: 2.5em; /* Reduzindo a margem */
+    padding: 1em 1em;
+    margin-bottom: 2.5em; 
     float: left;
-    width: 80%; /* Reduzindo a largura */
-    max-height: 17em; /* Defina a altura máxima desejada */
-    overflow: auto; /* Permite rolagem vertical se o conteúdo exceder a altura máxima */
-    text-align: left; /* Alinhamento do texto à esquerda */
+    width: 80%; 
+    max-height: 17em; 
+    overflow: auto;
+    text-align: left; 
 }
 
-/* Estilos para as perguntas à direita */
 .faq-item.right {
     background: #FFFFFF;
     box-shadow: 0px 1em 1.333em -0.667em rgba(105, 105, 114, 0.3);
     border-radius: 7px;
-    padding: 1em 1em; /* Reduzindo o preenchimento vertical e horizontal */
-    margin-bottom: 2.5em; /* Reduzindo a margem */
+    padding: 1em 1em; 
+    margin-bottom: 2.5em; 
     float: right;
-    width: 80%; /* Reduzindo a largura */
-    max-height: 17em; /* Defina a altura máxima desejada */
-    overflow: auto; /* Permite rolagem vertical se o conteúdo exceder a altura máxima */
-    text-align: left; /* Alinhamento do texto à esquerda */
+    width: 80%; 
+    max-height: 17em; 
+    overflow: auto; 
+    text-align: left; 
 }
