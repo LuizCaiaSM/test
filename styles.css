@@ -2,36 +2,28 @@ body {
     background-color: #f7fafc;
     text-align: center;
     color: #007bff;
-    font-family: sans-serif;
+    font-family: sans-serif, Arial;
+    min-height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
+    font-size: 16px;
 }
 
 h1 {
-    font-size: 40px;
-    padding: 1px 0;
+    font-size: 3em;
 }
 
-.faq-item {
-    width: 90%;
-    max-width: 400px;
-    padding: 10px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.7s;
-    box-shadow: 0 15px 30px rgba(66, 65, 65, 0.2);
-    display: inline-block;
+.faq-container {
+    display: center;
+    justify-content: center;
 }
+
 
 .faq-item h2 {
     color: #007bff;
+    cursor: pointer;
 }
 
 .answer {
@@ -42,45 +34,46 @@ h1 {
 }
 
 .expanded {
-    max-height: 500px;
+    max-height: 10em;
 }
 
 .search-bar {
     width: 600px;
-    max-width: 600px;
+    max-width: 100%;
     margin: 20px auto;
     padding: 10px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 10px 8px rgba(66, 65, 65, 0.2);
+    box-shadow: 0px 1em 1.333em -0.667em rgba(105, 105, 114, 0.3);
 }
 
-.faq-item:hover {
-    background-color: #f0f0f0;
-    transition: background-color 0.3s;
+.column {
+    width: 38%;
+    display: inline-block;
+    vertical-align: top;
 }
 
-
-.faq-item.first {
-    margin-left: 90px; 
+.faq-item.left {
+    background: #FFFFFF;
+    box-shadow: 0px 1em 1.333em -0.667em rgba(105, 105, 114, 0.3);
+    border-radius: 1em;
+    padding: 1em; 
+    margin-bottom: 2.5em; 
+    float: left;
+    width: 80%; 
+    max-height: 10em;
+      overflow: auto; 
 }
 
-.faq-item.second {
-    margin-right: 90px; 
+.faq-item.right {
+    background: #FFFFFF;
+    box-shadow: 0px 1em 1.333em -0.667em rgba(105, 105, 114, 0.3);
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 2.5em; 
+    float: right;
+    width: 80%; 
+    max-height: 10em; 
+      overflow: auto; 
 
-}
-.faq-item.third {
-    margin-left: 90px; 
-}
-
-.faq-item.fourth {
-    margin-right: 90px;
-}
-
-.faq-item.fifth {
-    margin-left: 90px; 
-}
-
-.faq-item.sixth {
-    margin-right: 90px;
 }

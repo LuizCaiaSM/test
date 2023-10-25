@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FAQ - PERGUNTAS FREQUENTES</title>
-    <link rel="stylesheet" href="STYLES.css">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <h1>Perguntas frequentes (FAQ)</h1>
@@ -13,46 +14,47 @@
         <input type="text" id="search-input" placeholder="Pesquisar pergunta" onkeyup="searchFAQ()" style="width: 600px;">
     </div>
 
-    <div class="faq-item first" onclick="toggleAnswer('answer1')">
-        <h2>Como cuidar de um pet?</h2>
-        <div id="answer1" class="answer">
-            Fornecer comida, água adequadas, atendimento veterinário regular, exercício, afeto e um ambiente limpo e seguro.
-        </div>
-    </div>
+    <div class="faq-container">
+        <div class="column">
+            <div class="faq-item left" onclick="toggleAnswer('answer1')">
+                <h2>Exemplo de pergunta</h2>
+                <div id="answer1" class="answer">
+                    Fornecer comida
+                </div>
+            </div>
 
-    <div class="faq-item second" onclick="toggleAnswer('answer2')">
-        <h2>Qual é a expectativa de vida dos pets?</h2>
-        <div id="answer2" class="answer">
-            A expectativa de vida varia de acordo com a espécie e a raça, mas geralmente os cães vivem de 10 a 15 anos e os gatos de 15 a 20 anos.
-        </div>
-    </div>
+            <div class="faq-item left" onclick="toggleAnswer('answer3')">
+                <h2>Exemplo de pergunta</h2>
+                <div id="answer3" class="answer">
+                    Exemplo de resposta
+                </div>
+            </div>
 
-        <div class="faq-item third" onclick="toggleAnswer('answer3')">
-            <h2>Qual o tempo de exercício ideal para um cão?</h2>
-            <div id="answer3" class="answer">
-                A quantidade varia de raça para raça, mas em média, de 10 a 20 minutos. Pode chegar a 30 minutos para cachorros de porte grande.
+            <div class="faq-item left" onclick="toggleAnswer('answer5')">
+                <h2>Exemplo de pergunta</h2>
+                <div id="answer5" class="answer">Exemplo de resposta
+                </div>
             </div>
         </div>
-    </div>
 
-    
-        <div class="faq-item fourth" onclick="toggleAnswer('answer4')">
-            <h2>Exemplo de pergunta</h2>
-            <p id="answer4" class="answer">Exemplo de resposta</p>
-        </div>
-    </div>
+        <div class="column">
+            <div class="faq-item right" onclick="toggleAnswer('answer2')">
+                <h2>Exemplo de pergunta</h2>
+                <div id="answer2" class="answer">Exemplo de resposta
+                </div>
+            </div>
 
-    
-        <div class="faq-item fifth" onclick="toggleAnswer('answer5')">
-            <h2>Exemplo de pergunta</h2>
-            <p id="answer5" class="answer">Exemplo de resposta</p>
-        </div>
-    </div>
+            <div class="faq-item right" onclick="toggleAnswer('answer4')">
+                <h2>Exemplo de pergunta</h2>
+                <div id="answer4" class="answer">Exemplo de resposta
+                </div>
+            </div>
 
-    
-        <div class="faq-item sixth" onclick="toggleAnswer('answer6')">
-            <h2>Exemplo de pergunta</h2>
-            <p id="answer6" class="answer">Exemplo de resposta</p>
+            <div class="faq-item right" onclick="toggleAnswer('answer6')">
+                <h2>Exemplo de pergunta</h2>
+                <div id="answer6" class="answer">Exemplo de resposta
+                </div>
+            </div>
         </div>
     </div>
 
@@ -68,15 +70,15 @@
             }
         }
     </script>
+
     <script>
         function searchFAQ() {
             var input, filter, faqItems, h2, i, txtValue;
             input = document.getElementById("search-input");
             filter = input.value.toLowerCase();
             faqItems = document.querySelectorAll(".faq-item");
-    
 
-            for (i = 0; i <faqItems.length; i++) {
+            for (i = 0; i < faqItems.length; i++) {
                 h2 = faqItems[i].getElementsByTagName("h2")[0];
                 txtValue = h2.textContent || h2.innerText;
 
